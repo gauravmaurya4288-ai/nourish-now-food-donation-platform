@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>My Profile | Nourish Now</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/navbar.css">
+<link rel="stylesheet" href="css/footer.css">
+<link rel="stylesheet" href="css/profile.css">
+
+</head>
+
+<body>
+
+<div id="navbar"></div>
+
+<section class="profile">
+
+<div class="profile-card">
+
+<div class="profile-header">
+
+<img src="https://ui-avatars.com/api/?name=User&background=22C55E&color=fff&size=200"
+id="profileImage">
+
+<h2 id="profileName">
+
+User Name
+
+</h2>
+
+<p id="profileType">
+
+Donor
+
+</p>
+
+</div>
+
+<form id="profileForm">
+
+<div class="row">
+
+<div class="input-box">
+
+<label>Full Name</label>
+
+<input
+type="text"
+id="fullName">
+
+</div>
+
+<div class="input-box">
+
+<label>Email</label>
+
+<input
+type="email"
+id="email"
+readonly>
+
+</div>
+
+</div>
+
+<div class="row">
+
+<div class="input-box">
+
+<label>Phone</label>
+
+<input
+type="text"
+id="phone">
+
+</div>
+
+<div class="input-box">
+
+<label>User Type</label>
+
+<select id="userType">
+
+<option>Individual Donor</option>
+
+<option>Restaurant</option>
+
+<option>NGO</option>
+
+<option>Volunteer</option>
+
+</select>
+
+</div>
+
+</div>
+
+<button class="save-btn">
+
+Save Changes
+
+</button>
+
+</form>
+
+</div>
+
+</section>
+
+<div id="footer"></div>
+
+<script src="js/components.js"></script>
+<script src="js/profile.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,297 @@
+/* ==========================
+   GOOGLE FONT
+========================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+/* ==========================
+   RESET
+========================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+/* ==========================
+   ROOT
+========================== */
+
+:root{
+
+    --primary:#22C55E;
+    --primary-dark:#15803D;
+    --secondary:#F97316;
+
+    --dark:#1E293B;
+    --gray:#64748B;
+
+    --white:#FFFFFF;
+    --light:#F8FAFC;
+
+}
+
+/* ==========================
+   HTML
+========================== */
+
+html{
+
+    scroll-behavior:smooth;
+
+}
+
+/* ==========================
+   BODY
+========================== */
+
+body{
+
+    font-family:'Poppins',sans-serif;
+
+    background:#F5F7FA;
+
+    color:var(--dark);
+
+    overflow-x:hidden;
+
+    line-height:1.6;
+
+}
+
+/* ==========================
+   CONTAINER
+========================== */
+
+.container{
+
+    width:90%;
+
+    max-width:1400px;
+
+    margin:auto;
+
+}
+
+/* ==========================
+   LINKS
+========================== */
+
+a{
+
+    text-decoration:none;
+
+    color:inherit;
+
+}
+
+/* ==========================
+   LIST
+========================== */
+
+ul{
+
+    list-style:none;
+
+}
+
+/* ==========================
+   IMAGE
+========================== */
+
+img{
+
+    width:100%;
+
+    display:block;
+
+}
+
+/* ==========================
+   BUTTONS
+========================== */
+
+button{
+
+    font-family:'Poppins',sans-serif;
+
+    cursor:pointer;
+
+    border:none;
+
+    transition:.3s;
+
+}
+
+/* ==========================
+   PRIMARY BUTTON
+========================== */
+
+.primary-btn{
+
+    display:inline-block;
+
+    background:var(--primary);
+
+    color:white;
+
+    padding:14px 32px;
+
+    border-radius:40px;
+
+    font-weight:600;
+
+    transition:.3s;
+
+}
+
+.primary-btn:hover{
+
+    background:var(--primary-dark);
+
+    transform:translateY(-2px);
+
+}
+
+/* ==========================
+   SECTION SPACING
+========================== */
+
+section{
+
+    padding:80px 0;
+
+}
+
+/* ==========================
+   HERO SPACING
+========================== */
+
+.hero,
+.about-hero,
+.mission-hero,
+.donate-hero,
+.login-page,
+.dashboard,
+.profile{
+
+    margin-top:30px;
+
+}
+
+/* ==========================
+   SECTION TITLE
+========================== */
+
+.section-title{
+
+    text-align:center;
+
+    margin-bottom:60px;
+
+}
+
+.section-title h2{
+
+    font-size:42px;
+
+    color:var(--dark);
+
+    margin-bottom:15px;
+
+}
+
+.section-title p{
+
+    color:var(--gray);
+
+    max-width:700px;
+
+    margin:auto;
+
+}
+
+/* ==========================
+   SCROLLBAR
+========================== */
+
+::-webkit-scrollbar{
+
+    width:10px;
+
+}
+
+::-webkit-scrollbar-track{
+
+    background:#eee;
+
+}
+
+::-webkit-scrollbar-thumb{
+
+    background:var(--primary);
+
+    border-radius:20px;
+
+}
+
+::-webkit-scrollbar-thumb:hover{
+
+    background:var(--primary-dark);
+
+}
+
+/* ==========================
+   RESPONSIVE
+========================== */
+
+@media(max-width:992px){
+
+    section{
+
+        padding:70px 0;
+
+    }
+
+}
+
+@media(max-width:768px){
+
+    .section-title h2{
+
+        font-size:32px;
+
+    }
+
+    .hero,
+    .about-hero,
+    .mission-hero,
+    .donate-hero,
+    .login-page,
+    .dashboard,
+    .profile{
+
+        margin-top:20px;
+
+    }
+
+}
+
+#navbar{
+
+    position:fixed;
+
+    top:15px;
+
+    left:0;
+
+    width:100%;
+
+    display:flex;
+
+    justify-content:center;
+
+    z-index:9999;
+
+}

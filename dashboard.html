@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0">
+
+<title>Dashboard | Nourish Now</title>
+
+<link rel="preconnect"
+href="https://fonts.googleapis.com">
+
+<link rel="preconnect"
+href="https://fonts.gstatic.com"
+crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+rel="stylesheet">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+<link rel="stylesheet"
+href="css/style.css">
+
+<link rel="stylesheet"
+href="css/navbar.css">
+
+<link rel="stylesheet"
+href="css/footer.css">
+
+<link rel="stylesheet"
+href="css/dashboard.css">
+
+</head>
+
+<body>
+
+<div id="navbar"></div>
+
+<section class="dashboard">
+
+<div class="welcome">
+
+<h1>
+
+Welcome,
+
+<span id="userName">
+
+User
+
+</span>
+
+👋
+
+</h1>
+
+<p id="todayDate"></p>
+
+</div>
+
+<!-- Statistics -->
+
+<div class="stats">
+
+<div class="stat-card">
+
+<i class="fas fa-box-open"></i>
+
+<h2 id="totalDonations">
+
+0
+
+</h2>
+
+<p>Total Donations</p>
+
+</div>
+
+<div class="stat-card">
+
+<i class="fas fa-utensils"></i>
+
+<h2 id="totalMeals">
+
+0
+
+</h2>
+
+<p>Meals Donated</p>
+
+</div>
+
+<div class="stat-card">
+
+<i class="fas fa-truck"></i>
+
+<h2>
+
+2
+
+</h2>
+
+<p>Pending Pickup</p>
+
+</div>
+
+<div class="stat-card">
+
+<i class="fas fa-check-circle"></i>
+
+<h2>
+
+15
+
+</h2>
+
+<p>Completed</p>
+
+</div>
+
+</div>
+
+<!-- Donation History -->
+
+<div class="history">
+
+<h2>
+
+Recent Donations
+
+</h2>
+
+<table>
+
+<thead>
+
+<tr>
+
+<th>Date</th>
+
+<th>Food</th>
+
+<th>Category</th>
+
+<th>Meals</th>
+
+</tr>
+
+</thead>
+
+<tbody id="historyBody">
+
+</tbody>
+
+</table>
+
+</div>
+
+<!-- Quick Actions -->
+
+<div class="actions">
+
+<a href="donate.html">
+
+<i class="fas fa-hand-holding-heart"></i>
+
+Donate Food
+
+</a>
+
+<a href="profile.html">
+
+<i class="fas fa-user"></i>
+
+Profile
+
+</a>
+
+<button onclick="logout()">
+
+<i class="fas fa-right-from-bracket"></i>
+
+Logout
+
+</button>
+
+</div>
+
+</section>
+
+<div id="footer"></div>
+
+<script src="js/components.js"></script>
+
+<script src="js/dashboard.js"></script>
+
+</body>
+
+</html>

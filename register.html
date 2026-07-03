@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Register | Nourish Now</title>
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/auth.css">
+    <link rel="stylesheet" href="css/responsive.css">
+
+</head>
+
+<body>
+
+<div id="navbar"></div>
+
+<section class="login-page">
+
+    <div class="login-container">
+
+        <!-- Left Side -->
+
+        <div class="login-image">
+
+            <img src="https://www.jstngo.org/wp-content/uploads/2024/06/WhatsApp-Image-2025-05-22-at-12.23.18-1024x1024.jpeg"
+            alt="Register">
+
+        </div>
+
+        <!-- Right Side -->
+
+        <div class="login-card">
+
+            <h2>Create Account</h2>
+
+            <p>
+
+                Join Nourish Now and help reduce food waste.
+
+            </p>
+
+            <form id="registerForm">
+
+                <!-- Full Name -->
+
+                <div class="input-box">
+
+                    <label>Full Name</label>
+
+                    <input
+                    type="text"
+                    id="fullName"
+                    placeholder="Enter your full name"
+                    required>
+
+                </div>
+
+                <!-- Email -->
+
+                <div class="input-box">
+
+                    <label>Email</label>
+
+                    <input
+                    type="email"
+                    id="email"
+                    placeholder="Enter your email"
+                    required>
+
+                </div>
+
+                <!-- Phone -->
+
+                <div class="input-box">
+
+                    <label>Phone Number</label>
+
+                    <input
+                    type="tel"
+                    id="phone"
+                    placeholder="Enter your phone number"
+                    required>
+
+                </div>
+
+                <!-- User Type -->
+
+                <div class="input-box">
+
+                    <label>User Type</label>
+
+                    <select id="userType" required>
+
+                        <option value="">Select User Type</option>
+
+                        <option>Individual Donor</option>
+
+                        <option>Restaurant</option>
+
+                        <option>NGO</option>
+
+                        <option>Volunteer</option>
+
+                    </select>
+
+                </div>
+
+                <!-- Password -->
+
+                <div class="input-box">
+
+                    <label>Password</label>
+
+                    <div class="password-box">
+
+                        <input
+                        type="password"
+                        id="password"
+                        placeholder="Create password"
+                        required>
+
+                        <i class="fas fa-eye togglePassword"></i>
+
+                    </div>
+
+                </div>
+
+                <!-- Confirm Password -->
+
+                <div class="input-box">
+
+                    <label>Confirm Password</label>
+
+                    <div class="password-box">
+
+                        <input
+                        type="password"
+                        id="confirmPassword"
+                        placeholder="Confirm password"
+                        required>
+
+                        <i class="fas fa-eye togglePassword"></i>
+
+                    </div>
+
+                </div>
+
+                <!-- Terms -->
+
+                <div class="login-options">
+
+                    <label>
+
+                        <input type="checkbox"
+                        id="terms"
+                        required>
+
+                        I agree to the Terms & Conditions
+
+                    </label>
+
+                </div>
+
+                <!-- Button -->
+
+                <button
+                type="submit"
+                class="login-btn">
+
+                    Create Account
+
+                </button>
+
+            </form>
+
+            <div class="divider">
+
+                <span>OR</span>
+
+            </div>
+
+            <div class="social-login">
+
+                <button class="google">
+
+                    <i class="fab fa-google"></i>
+
+                    Google
+
+                </button>
+
+                <button class="facebook">
+
+                    <i class="fab fa-facebook-f"></i>
+
+                    Facebook
+
+                </button>
+
+            </div>
+
+            <div class="register-link">
+
+                Already have an account?
+
+                <a href="login.html">
+
+                    Login
+
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<div id="footer"></div>
+
+<script src="js/components.js"></script>
+<script src="js/auth.js"></script>
+
+</body>
+
+</html>

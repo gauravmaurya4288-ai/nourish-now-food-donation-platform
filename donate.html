@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Donate Food | Nourish Now</title>
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/donate.css">
+    <link rel="stylesheet" href="css/responsive.css">
+
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <div id="navbar"></div>
+
+    <!-- ================= HERO ================= -->
+
+    <section class="donate-hero">
+
+        <div class="overlay">
+
+            <h1>Donate Food Today</h1>
+
+            <p>
+
+                Every meal you donate can bring hope to someone in need.
+                Help us reduce food waste and fight hunger.
+
+            </p>
+
+            <a href="#donationForm" class="donate-btn">
+
+                Donate Now
+
+            </a>
+
+        </div>
+
+    </section>
+
+    <!-- ================= DONATION FORM ================= -->
+
+    <section class="donation-section" id="donationForm">
+
+        <div class="section-title">
+
+            <h2>Food Donation Form</h2>
+
+            <p>
+
+                Please fill out the details below.
+
+            </p>
+
+        </div>
+
+        <form id="donateForm">
+
+            <!-- Donor Information -->
+
+            <div class="form-card">
+
+                <h3>
+
+                    <i class="fas fa-user"></i>
+
+                    Donor Information
+
+                </h3>
+
+                <div class="input-group">
+
+                    <input
+                        type="text"
+                        id="name"
+                        placeholder="Full Name"
+                        required>
+
+                    <input
+                        type="email"
+                        id="email"
+                        placeholder="Email Address"
+                        required>
+
+                </div>
+
+                <div class="input-group">
+
+                    <input
+                        type="tel"
+                        id="phone"
+                        placeholder="Phone Number"
+                        required>
+
+                    <input
+                        type="text"
+                        id="organization"
+                        placeholder="Organization (Optional)">
+
+                </div>
+
+            </div>
+
+            <!-- Food Details -->
+
+            <div class="form-card">
+
+                <h3>
+
+                    <i class="fas fa-utensils"></i>
+
+                    Food Details
+
+                </h3>
+
+                <div class="input-group">
+
+                    <input
+                        type="text"
+                        id="foodName"
+                        placeholder="Food Name"
+                        required>
+
+                    <select id="category" required>
+
+                        <option value="">Select Category</option>
+
+                        <option>Vegetarian</option>
+
+                        <option>Non-Vegetarian</option>
+
+                        <option>Bakery</option>
+
+                        <option>Fruits</option>
+
+                        <option>Beverages</option>
+
+                        <option>Desserts</option>
+
+                        <option>Others</option>
+
+                    </select>
+
+                </div>
+
+                <div class="input-group">
+
+                    <input
+                        type="number"
+                        id="quantity"
+                        placeholder="Approx. Meals"
+                        required>
+
+                    <input
+                        type="number"
+                        id="weight"
+                        placeholder="Weight (kg)">
+
+                </div>
+
+            </div>
+
+            <!-- Pickup Details -->
+
+            <div class="form-card">
+
+                <h3>
+
+                    <i class="fas fa-map-marker-alt"></i>
+
+                    Pickup Details
+
+                </h3>
+
+                <textarea
+                    id="address"
+                    rows="4"
+                    placeholder="Pickup Address"
+                    required></textarea>
+
+                <div class="input-group">
+
+                    <input
+                        type="text"
+                        placeholder="City"
+                        required>
+
+                    <input
+                        type="text"
+                        placeholder="State"
+                        required>
+
+                </div>
+
+                <div class="input-group">
+
+                    <input
+                        type="date"
+                        required>
+
+                    <input
+                        type="time"
+                        required>
+
+                </div>
+
+            </div>
+
+            <!-- Additional Information -->
+
+            <div class="form-card">
+
+                <h3>
+
+                    <i class="fas fa-info-circle"></i>
+
+                    Additional Information
+
+                </h3>
+
+                <textarea
+                    id="notes"
+                    rows="5"
+                    placeholder="Additional Notes"></textarea>
+
+                <label class="upload-box">
+
+                    <i class="fas fa-cloud-upload-alt"></i>
+
+                    Upload Food Image
+
+                    <input
+                        type="file"
+                        id="foodImage"
+                        accept="image/*">
+
+                </label>
+
+            </div>
+
+            <!-- Submit -->
+
+            <div class="submit-section">
+
+                <button
+                    type="submit"
+                    class="submit-btn">
+
+                    <i class="fas fa-paper-plane"></i>
+
+                    Submit Donation
+
+                </button>
+
+            </div>
+
+        </form>
+
+    </section>
+
+    <!-- ================= GUIDELINES ================= -->
+
+    <section class="guidelines">
+
+        <div class="section-title">
+
+            <h2>Donation Guidelines</h2>
+
+        </div>
+
+        <div class="guideline-grid">
+
+            <div class="guide">
+
+                <i class="fas fa-check-circle"></i>
+
+                <p>Food must be freshly prepared.</p>
+
+            </div>
+
+            <div class="guide">
+
+                <i class="fas fa-box"></i>
+
+                <p>Food should be properly packed.</p>
+
+            </div>
+
+            <div class="guide">
+
+                <i class="fas fa-clock"></i>
+
+                <p>Pickup should be within 2 hours.</p>
+
+            </div>
+
+            <div class="guide">
+
+                <i class="fas fa-allergies"></i>
+
+                <p>Mention any allergens.</p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Footer -->
+
+    <div id="footer"></div>
+
+    <script src="js/components.js"></script>
+    <script src="js/donate.js"></script>
+
+</body>
+
+</html>
